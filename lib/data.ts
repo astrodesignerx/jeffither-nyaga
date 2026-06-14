@@ -1,0 +1,138 @@
+export const siteData = {
+  name: "Jeffither Nyaga",
+  title: "Advocate | Kenya",
+  tagline: "Litigation · Commercial Law · Constitutional Rights",
+  monogram: "JN",
+  bio: "For over a decade, I have advised individuals, businesses, and institutions on matters that require both legal expertise and practical judgment. My approach is simple: understand the facts, identify the risks, and develop a strategy that protects my clients' interests while pursuing the most effective outcome. Every case presents unique challenges. I believe that strong legal representation begins with careful listening and meticulous preparation. Clients work with me because they value clarity, responsiveness, and a commitment to seeing matters through with professionalism and discretion.",
+  stats: [
+    { value: 12, suffix: "+", label: "Years in Practice" },
+    { value: 300, suffix: "+", label: "Cases Handled" },
+    { value: 1, prefix: "", suffix: "", label: "High Court Certified" },
+  ],
+  skills: [
+    {
+      name: "Commercial Litigation",
+      level: 95,
+      description: "Representing businesses and individuals in disputes involving contracts, commercial transactions, debt recovery, shareholder disagreements, and business-related claims.",
+    },
+    {
+      name: "Constitutional Law",
+      level: 90,
+      description: "Protecting fundamental rights and freedoms through constitutional petitions, judicial review proceedings, and public law litigation.",
+    },
+    {
+      name: "Employment & Labour Relations",
+      level: 85,
+      description: "Advising employers and employees on workplace disputes, employment contracts, disciplinary matters, terminations, and labour compliance.",
+    },
+    {
+      name: "Alternative Dispute Resolution",
+      level: 80,
+      description: "Helping clients resolve disputes efficiently through negotiation, mediation, and arbitration while avoiding unnecessary litigation where possible.",
+    },
+    {
+      name: "Corporate & Commercial Advisory",
+      level: 90,
+      description: "Supporting businesses with legal structuring, commercial agreements, compliance matters, governance frameworks, and strategic legal advice.",
+    },
+  ],
+  languages: [
+    { name: "English", level: "Native" },
+    { name: "Swahili", level: "Fluent" },
+  ],
+  personalSkills: [
+    "Strategic Thinking",
+    "Client Advocacy",
+    "Negotiation",
+    "Legal Research",
+    "Public Speaking",
+    "Case Management",
+  ],
+  services: [
+    "Contract Drafting & Review",
+    "Litigation Representation",
+    "Legal Advisory & Opinions",
+    "Mediation & Arbitration",
+    "Corporate Governance",
+    "Due Diligence",
+  ],
+  hobbies: [
+    { name: "Reading", icon: "IconBook" as const },
+    { name: "Photography", icon: "IconCamera" as const },
+    { name: "Travel", icon: "IconPlane" as const },
+    { name: "Chess", icon: "IconChess" as const },
+  ],
+  experience: [
+    {
+      year: "2021–Present",
+      role: "Founder & Managing Partner",
+      firm: "Nyaga & Associates Advocates",
+      description: "Leading a growing legal practice focused on delivering practical legal solutions for businesses, professionals, and private clients across Kenya.",
+    },
+    {
+      year: "2017–2021",
+      role: "Senior Associate",
+      firm: "Kariuki, Omondi & Co. Advocates",
+      description: "Managed complex litigation files, advised corporate clients, and represented parties before various courts and tribunals.",
+    },
+    {
+      year: "2013–2017",
+      role: "Associate Advocate",
+      firm: "Kenya Legal Aid Centre",
+      description: "Provided legal assistance and advocacy services while supporting access to justice initiatives for underserved communities.",
+    },
+  ],
+  education: [
+    { title: "Bachelor of Laws (LL.B)", institution: "University of Nairobi" },
+    { title: "Advocates Training Programme", institution: "Kenya School of Law" },
+    { title: "Admitted to the Roll of Advocates", institution: "Republic of Kenya" },
+    { title: "Member", institution: "Law Society of Kenya" },
+  ],
+  notableCases: [
+    "Constitutional Petition No. 12 of 2020",
+    "Commercial Dispute — KES 450M",
+    "Land Reference — ELCC 89/2019",
+    "Judicial Review — Misc. 34/2021",
+    "Employment Claim — Cause 156/2018",
+    "Arbitration — KES 210M Award",
+    "Constitutional Reference — Petition 45/2022",
+    "Commercial Division — HCCC 78/2020",
+    "Appellate Matter — Civil Appeal 23/2019",
+    "Public Interest — Petition 8/2023",
+    "Shareholder Dispute — KES 180M",
+    "Property Appeal — ELC 112/2021",
+  ],
+  testimonials: [
+    {
+      quote: "Jeffither brought clarity to a case we thought was unwinnable. His strategic mind and courtroom presence are exceptional.",
+      name: "James Kariuki",
+      company: "Managing Director, East Africa Holdings",
+    },
+    {
+      quote: "He doesn't just know the law — he understands people. That combination is rare and it won us the case.",
+      name: "Dr. Amina Wanjiku",
+      company: "Founder, Amani Healthcare Group",
+    },
+    {
+      quote: "Working with Nyaga & Associates has been transformative. The level of preparation and attention to detail is unmatched.",
+      name: "Peter Omondi",
+      company: "CEO, Savannah Logistics Ltd",
+    },
+  ],
+  contact: {
+    address: "Nairobi CBD, Kenya",
+    phone: "+254 700 000 000",
+    email: "jeffither@nyagaassociates.co.ke",
+    hours: "Mon–Fri, 8:00 AM – 5:00 PM",
+  },
+  navLinks: [
+    { label: "Home", href: "#hero" },
+    { label: "About", href: "#about" },
+    { label: "Resume", href: "#resume" },
+    { label: "Contact", href: "#contact" },
+  ],
+  social: {
+    linkedin: "https://www.linkedin.com/in/jeffither-karu/",
+    twitter: "https://twitter.com",
+  },
+};
