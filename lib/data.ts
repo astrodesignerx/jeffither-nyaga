@@ -121,8 +121,8 @@ export const siteData = {
   ],
   contact: {
     address: "Nairobi CBD, Kenya",
-    phone: "+254 700 000 000",
-    email: "jeffither@nyagaassociates.co.ke",
+    phone: "+254 719 104 224",
+    email: "nyagahjeff254@gmail.com",
     hours: "Mon–Fri, 8:00 AM – 5:00 PM",
   },
   navLinks: [

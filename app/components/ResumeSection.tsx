@@ -76,14 +76,14 @@ export function ResumeSection() {
                     <span className="text-[11px] text-muted font-[family-name:var(--font-dm-mono)] mb-1 block">
                       {entry.year}
                     </span>
-                    <p className="text-[15px] font-semibold text-foreground font-[family-name:var(--font-poppins)] leading-tight">
+                    <p className="text-[clamp(14px,1.5vw,15px)] font-semibold text-foreground font-[family-name:var(--font-poppins)] leading-tight">
                       {entry.role}
                     </p>
-                    <p className="text-[13px] text-[#45B6D1] mt-0.5 font-[family-name:var(--font-inter)]">
+                    <p className="text-[clamp(12px,1.3vw,13px)] text-[#45B6D1] mt-0.5 font-[family-name:var(--font-inter)]">
                       {entry.firm}
                     </p>
                     {"description" in entry && (
-                      <p className="text-[12px] text-muted mt-2 leading-[1.6] font-[family-name:var(--font-inter)]">
+                      <p className="text-[clamp(11px,1.2vw,12px)] text-muted mt-2 leading-[1.6] font-[family-name:var(--font-inter)]">
                         {entry.description}
                       </p>
                     )}
@@ -98,7 +98,7 @@ export function ResumeSection() {
               </h3>
               {siteData.languages.map((lang) => (
                 <div key={lang.name} className="flex items-baseline gap-2 mb-2">
-                  <span className="text-[14px] text-foreground font-[family-name:var(--font-inter)]">
+                  <span className="text-[clamp(13px,1.4vw,14px)] text-foreground font-[family-name:var(--font-inter)]">
                     {lang.name}
                   </span>
                   <span className="text-[11px] text-muted font-[family-name:var(--font-dm-mono)]">

@@ -68,7 +68,7 @@ export function About() {
         transition={{ duration: 1.0, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         src="/portrait.png"
         alt=""
-        className="absolute right-0 -bottom-12 w-[45%] h-full object-contain object-bottom z-0"
+        className="absolute right-0 -bottom-12 w-[50%] lg:w-[45%] h-full object-contain object-bottom z-0"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent z-[2]" />
 
@@ -90,10 +90,28 @@ export function About() {
               viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
             >
-              <p className="text-[18px] text-muted leading-[1.8] max-w-[560px] font-[family-name:var(--font-inter)]">
-                {siteData.bio}
+              <p className="text-[clamp(15px,1.8vw,18px)] text-muted leading-[1.8] max-w-[560px] font-[family-name:var(--font-inter)]">
+                {siteData.bio.split("").map((char, i, arr) => {
+                  const delay = Math.pow(i / arr.length, 0.55) * 1.8;
+                  return (
+                    <motion.span
+                      key={i}
+                      initial={{ opacity: 0, y: 8 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{
+                        duration: 0.3,
+                        delay,
+                        ease: [0.16, 1, 0.3, 1],
+                      }}
+                      className="inline-block"
+                    >
+                      {char === " " ? "\u00A0" : char}
+                    </motion.span>
+                  );
+                })}
               </p>
-              <p className="text-[14px] text-muted/60 mt-3 font-[family-name:var(--font-inter)]">
+              <p className="text-[clamp(12px,1.4vw,14px)] text-muted/60 mt-3 font-[family-name:var(--font-inter)]">
                 Based in {siteData.contact.address}
               </p>
             </motion.div>
@@ -107,7 +125,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[11px] tracking-[0.15em] uppercase text-muted font-[family-name:var(--font-dm-mono)] mt-auto pb-12 translate-y-[100px]"
+          className="text-[11px] tracking-[0.15em] uppercase text-muted font-[family-name:var(--font-dm-mono)] mt-auto pb-12 translate-y-[60px] md:translate-y-[100px]"
         >
           {siteData.tagline}
         </motion.p>

@@ -81,7 +81,7 @@ export function Hero() {
       />
 
       {/* Name — landscape, behind image, base layer 20% opacity */}
-      <div className="absolute inset-0 flex items-center justify-center z-0 opacity-10">
+      <div className="absolute inset-0 flex items-start md:items-center justify-center z-0 opacity-10 pt-12 md:pt-0">
         <h1 className="flex flex-col items-center text-center font-bold leading-[0.8] font-[family-name:var(--font-poppins)] text-foreground tracking-[-0.03em] uppercase">
           <span className="flex text-[clamp(4rem,16vw,16rem)]">
             {jeff.map((char, i) => (
@@ -113,7 +113,7 @@ export function Hero() {
       {/* Name — spotlight layer 60% opacity, radial mask */}
       <div
         ref={spotlightRef}
-        className="absolute inset-0 flex items-center justify-center z-0 opacity-60"
+        className="absolute inset-0 flex items-start md:items-center justify-center z-0 opacity-60"
         style={{
           maskImage: "radial-gradient(circle 350px at var(--sx, 50%) var(--sy, 50%), black 20%, transparent 100%)",
           WebkitMaskImage: "radial-gradient(circle 350px at var(--sx, 50%) var(--sy, 50%), black 20%, transparent 100%)",
@@ -148,7 +148,7 @@ export function Hero() {
       </div>
 
       {/* Image — bottom aligned, over text, breathe float + parallax */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-[1] w-auto h-[120%]">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-[1] w-auto h-[90%] md:h-[120%]">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.15, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[12px] text-muted mt-2 max-w-[500px] text-center leading-[1.7] font-[family-name:var(--font-inter)]"
+            className="text-[clamp(10px,1.5vw,13px)] text-muted mt-2 max-w-[90%] md:max-w-[500px] text-center leading-[1.7] font-[family-name:var(--font-inter)]"
           >
             Legal matters often arrive at life&apos;s most critical moments. Every client deserves clear guidance, sound judgment, and committed representation. I provide strategic legal counsel grounded in diligence, integrity, and a deep understanding of the law.
           </motion.p>

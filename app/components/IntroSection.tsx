@@ -273,7 +273,7 @@ export function IntroSection({ onDismiss }: { onDismiss?: () => void }) {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col items-center text-center"
             >
-              <h1 className="text-4xl font-bold text-muted tracking-[0.12em] uppercase font-[family-name:var(--font-poppins)] whitespace-nowrap">
+              <h1 className="text-[clamp(1.5rem,6vw,2.5rem)] font-bold text-muted tracking-[0.12em] uppercase font-[family-name:var(--font-poppins)] whitespace-normal md:whitespace-nowrap text-center">
                 Jeffither Nyaga
               </h1>
               <span className="text-[10px] tracking-[0.3em] uppercase text-[#45B6D1] mt-2 font-[family-name:var(--font-dm-mono)]">

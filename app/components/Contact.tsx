@@ -34,7 +34,7 @@ export function Contact() {
                   <p className="text-[11px] text-muted tracking-[0.1em] uppercase font-[family-name:var(--font-dm-mono)] mb-1">
                     Address
                   </p>
-                  <p className="text-[14px] text-foreground font-[family-name:var(--font-inter)]">
+                  <p className="text-[clamp(13px,1.5vw,14px)] text-foreground font-[family-name:var(--font-inter)]">
                     {siteData.contact.address}
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export function Contact() {
                   <p className="text-[11px] text-muted tracking-[0.1em] uppercase font-[family-name:var(--font-dm-mono)] mb-1">
                     Phone
                   </p>
-                  <p className="text-[14px] text-foreground font-[family-name:var(--font-inter)]">
+                  <p className="text-[clamp(13px,1.5vw,14px)] text-foreground font-[family-name:var(--font-inter)]">
                     {siteData.contact.phone}
                   </p>
                 </div>
@@ -62,7 +62,7 @@ export function Contact() {
                   <p className="text-[11px] text-muted tracking-[0.1em] uppercase font-[family-name:var(--font-dm-mono)] mb-1">
                     Email
                   </p>
-                  <p className="text-[14px] text-foreground font-[family-name:var(--font-inter)]">
+                  <p className="text-[clamp(13px,1.5vw,14px)] text-foreground font-[family-name:var(--font-inter)]">
                     {siteData.contact.email}
                   </p>
                 </div>
@@ -76,7 +76,7 @@ export function Contact() {
                   <p className="text-[11px] text-muted tracking-[0.1em] uppercase font-[family-name:var(--font-dm-mono)] mb-1">
                     Hours
                   </p>
-                  <p className="text-[14px] text-foreground font-[family-name:var(--font-inter)]">
+                  <p className="text-[clamp(13px,1.5vw,14px)] text-foreground font-[family-name:var(--font-inter)]">
                     {siteData.contact.hours}
                   </p>
                 </div>

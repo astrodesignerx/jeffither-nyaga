@@ -21,7 +21,7 @@ export function Footer() {
   }, []);
 
   return (
-    <footer className="bg-background py-32 overflow-hidden">
+    <footer className="bg-background py-40 md:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-8 flex flex-col items-center gap-12">
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
           <p className="text-[12px] text-muted font-[family-name:var(--font-dm-mono)] tracking-[0.08em] uppercase">
@@ -37,7 +37,7 @@ export function Footer() {
         {/* Name with spotlight — contained in relative wrapper */}
         <div className="relative w-full flex justify-center">
           {/* Base layer */}
-          <h2 className="text-[clamp(4.5rem,12vw,10rem)] font-bold leading-[0.85] text-[#45B6D1] uppercase tracking-[-0.03em] font-[family-name:var(--font-poppins)] whitespace-nowrap opacity-10">
+          <h2 className="text-[clamp(2.5rem,8vw,10rem)] font-bold leading-[0.85] text-[#45B6D1] uppercase tracking-[-0.03em] font-[family-name:var(--font-poppins)] whitespace-normal md:whitespace-nowrap opacity-10">
             JEFFITHER NYAGA
           </h2>
           {/* Spotlight layer */}
@@ -49,7 +49,7 @@ export function Footer() {
               WebkitMaskImage: "radial-gradient(circle 500px at var(--fx, 50%) var(--fy, 50%), black 20%, transparent 100%)",
             }}
           >
-            <h2 className="text-[clamp(4.5rem,12vw,10rem)] font-bold leading-[0.85] text-[#45B6D1] uppercase tracking-[-0.03em] font-[family-name:var(--font-poppins)] whitespace-nowrap">
+            <h2 className="text-[clamp(2.5rem,8vw,10rem)] font-bold leading-[0.85] text-[#45B6D1] uppercase tracking-[-0.03em] font-[family-name:var(--font-poppins)] whitespace-normal md:whitespace-nowrap">
               JEFFITHER NYAGA
             </h2>
           </div>
